@@ -1,0 +1,11 @@
+CONVITE — IEAD JD. IVONE
+
+Abra index.html para visualizar o convite. Mantenha style.css, app.js e a pasta assets junto dele.
+
+Para adicionar WhatsApp, abra app.js e preencha WHATSAPP na primeira configuração com o número completo: código do país + DDD + número, apenas dígitos. O botão passa a abrir uma mensagem de confirmação.
+
+Sem número configurado, o botão orienta o convidado a falar com a Pastora Fabiana ou o Diácono Elmiro. Nenhuma confirmação é registrada automaticamente.
+
+As fotos abrem em uma galeria; a tecla Esc fecha a foto. O botão Pix copia a chave. A agenda baixa um arquivo .ics com o evento das 9h às 19h no horário de Brasília. O mapa abre a busca pelo endereço confirmado.
+
+Para compartilhar por link, publique toda a pasta em uma hospedagem de páginas estáticas. Esta entrega é local e ainda não possui link público.
