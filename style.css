@@ -23,3 +23,5 @@ body.cover-visible{overflow:hidden}
 #invitation-title:focus{outline:none}
 @media(max-width:760px){.envelope{height:190px}.envelope-seal{top:80px}.cover-content h2{margin-bottom:40px}}
 @media(prefers-reduced-motion:reduce){#invitation-cover,.envelope-letter,.envelope-flap,.envelope-seal{transition:none}}
+.countdown{text-align:center;padding:0 24px 45px}.countdown-units{display:flex;justify-content:center;gap:14px;margin:20px auto}.countdown-units>div{width:100px;background:#eee8ed;border:1px solid #ded0e3;border-radius:12px;padding:15px 8px}.countdown-units strong{display:block;font:38px/1.2 Georgia,serif;color:var(--purple);font-variant-numeric:tabular-nums}.countdown-units span{display:block;font-size:11px;color:#746776;letter-spacing:1px;margin-top:4px}#countdown-message{font-size:12px;color:#746776}@media(max-width:760px){.countdown-units{gap:8px}.countdown-units>div{width:75px;padding:12px 4px}.countdown-units strong{font-size:30px}}
+

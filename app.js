@@ -1,5 +1,5 @@
 // Adicione o número com código do país e DDD. Exemplo de formato: 55 + DDD + número (apenas dígitos).
-const WHATSAPP = '';
+const WHATSAPP = '5511994664987';
 const PIX = '316.414.408-96';
 let toastTimer;
 function notify(message){const el=document.querySelector('#toast');el.textContent=message;el.style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.style.display='none',5000);}
@@ -39,4 +39,26 @@ if (invitationCover && typeof invitationCover.showModal === 'function') {
     setTimeout(finishOpening, 1450);
   });
 }
+
+
+// Datas com fuso explícito para que a contagem funcione em qualquer localização.
+const EVENT_START = Date.parse('2026-12-12T09:00:00-03:00');
+const EVENT_END = Date.parse('2026-12-12T19:00:00-03:00');
+function countdownValues(now) {
+  const remaining = Math.max(0, Math.floor((EVENT_START - now) / 1000));
+  return [Math.floor(remaining / 86400), Math.floor(remaining / 3600) % 24, Math.floor(remaining / 60) % 60, remaining % 60];
+}
+function updateCountdown() {
+  const now = Date.now();
+  const values = countdownValues(now);
+  ['days', 'hours', 'minutes', 'seconds'].forEach((unit, index) => {
+    document.querySelector('#count-' + unit).textContent = String(values[index]).padStart(2, '0');
+  });
+  if (now >= EVENT_START) {
+    document.querySelector('#countdown-title').textContent = now < EVENT_END ? 'CHEGOU O DIA DO NOSSO ENCONTRO!' : 'OBRIGADO POR CELEBRAR CONOSCO!';
+    document.querySelector('#countdown-message').textContent = now < EVENT_END ? 'Esperamos você! Nosso encontro vai até as 19h.' : 'Que venham mais momentos de fé, alegria e comunhão.';
+  }
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
 
