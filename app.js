@@ -39,3 +39,4 @@ if (invitationCover && typeof invitationCover.showModal === 'function') {
     setTimeout(finishOpening, 1450);
   });
 }
+
