@@ -1,6 +1,6 @@
 // Adicione o número com código do país e DDD. Exemplo de formato: 55 + DDD + número (apenas dígitos).
 const WHATSAPP = '5511994664987';
-const PIX = '316.414.408-96';
+const PIX = '316.414.498-96';
 let toastTimer;
 function notify(message){const el=document.querySelector('#toast');el.textContent=message;el.style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.style.display='none',5000);}
 const dialog=document.querySelector('#lightbox');
